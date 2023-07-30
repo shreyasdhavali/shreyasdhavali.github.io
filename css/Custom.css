@@ -1,0 +1,94 @@
+/* Text Animation */
+
+.demo,
+.demo-item {
+    font: 100%/1.5 sans-serif;
+    min-height: 100%;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 400;
+}
+
+
+/*The good stuff*/
+.demo,
+.demo-item {
+    height: 80px;
+}
+
+.demo {
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.demo-item {
+    position: relative;
+    font-size: 1.5em;
+    padding-top: .75em;
+    animation: animatetotop 9s steps(3) infinite;
+}
+
+.demo-item_inner,
+.demo-item-overlay {
+    display: inline-block;
+}
+
+.demo-item_inner {
+    position: relative;
+    line-height: 1;
+}
+
+.demo-item_inner:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    background-color: #448DBF;
+    animation: animatetoright 1.5s steps(1000) infinite alternate;
+}
+
+@keyframes animatetoright {
+    0% {
+        left: 0;
+        margin-right: auto;
+    }
+    100% {
+        left: 100%;
+        margin-left: .6em;
+        margin-right: -.6em;
+    }
+}
+
+@keyframes animatetotop {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -240px;
+    }
+}
+
+
+/* circle image*/
+.circle-image {
+    width: 45%;
+    height: 50%;
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle();
+}
+
+/* Header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
