@@ -83,7 +83,7 @@
 </div>
 <!-- End #lead -->
 
-<div id="about" style="background: #1E1842">
+<div id="about">
     <div class="container">
         <div class="row">
             <div style="text-align: center; color: white">
@@ -104,6 +104,7 @@
             </div>
         </div>
     </div>
+    <div id="about-overlay"></div>
 </div>
 <!-- End #about -->
 
@@ -324,6 +325,25 @@
             </div>
             <div class="project shadow-large">
                 <div class="project-image">
+                    <img src="images/spring-boot-architecture2.png" style="height: 200px"/>
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Spring backend application, Bangalore</h3>
+                    <p>
+                        A Spring API application is a software solution built using the Spring Framework,
+                        a widely adopted and comprehensive platform that simplifies the development of Java-based applications.
+                        With its modular architecture, robust features, and extensive ecosystem,
+                        the Spring Framework has become a go-to choice for creating scalable, maintainable,
+                        and efficient API-based applications.
+                    </p>
+                    <a href="https://github.com/shreyasdhavali/SpringWebApplication" target="_blank">View Project</a>
+                </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+            <div class="project shadow-large">
+                <div class="project-image">
                     <img src="images/Hydra.jpg" style="height: 200px"/>
                 </div>
                 <!-- End .project-image -->
@@ -426,7 +446,7 @@
             <input type="hidden" name="_subject" value="Contact request from personal website"/>
             <input type="email" name="_replyto" placeholder="Your email" required>
             <textarea name="message" placeholder="Your message" required></textarea>
-            <button type="submit">Send</button>
+            <button class="glow-on-hover" type="submit">Send</button>
         </form>
     </div>
     <!-- End #contact-form -->
