@@ -73,8 +73,8 @@
 
 /* circle image*/
 .circle-image {
-    width: 90%;
-    height: 70%;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
     float: left;
     border-radius: 50%;
